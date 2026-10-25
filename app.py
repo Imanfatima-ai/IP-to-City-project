@@ -100,6 +100,7 @@ if st.button("Look Up IP"):
 
         if result["success"]:
             st.success("Lookup successful!")
+            st.session_state["results_df"] = pd.DataFrame([result])
             
 # Save the searched IP to the database
             connection = sqlite3.connect("ip_geolocation.db")
