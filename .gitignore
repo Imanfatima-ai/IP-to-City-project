@@ -1,0 +1,28 @@
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# CSV files
+*.csv
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Test files
+test_*.py
+*_test.py
+tests/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+tempCodeRunnerFile.py
