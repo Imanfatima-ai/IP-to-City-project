@@ -1,0 +1,71 @@
+# 🌍 IP Geolocation Explorer
+
+## 📌 Project Description
+
+IP Geolocation Explorer is a web-based application developed using Python and Streamlit. It allows users to look up geographical information for IP addresses, analyze multiple IP addresses through CSV files, visualize results using charts, and view stored lookup records.
+
+## 🚀 Live Demo
+
+**Live Application:** [https://ip-to-city-explorer.streamlit.app/]
+
+## ✨ Features
+
+- **Home Dashboard:** Provides an overview and navigation to the application's features.
+- **IP Lookup:** Retrieves geographical information for a given IP address.
+- **CSV Analysis:** Upload a CSV file to analyze multiple IP addresses.
+- **Results & Charts:** Displays lookup results and visualizations for data analysis.
+- **Database Records:** Allows users to view previously stored lookup records.
+- **Interactive Interface:** Provides easy navigation through a sidebar.
+
+## 🛠️ Technologies Used
+
+- Python
+- Streamlit
+- Pandas
+- Requests
+- SQLite
+- ipaddress
+- IPWho.is API
+
+## ⚙️ How It Works
+
+1. The user enters an IP address or uploads a CSV file containing multiple IP addresses.
+2. The application sends requests to the IPWho.is API to retrieve geolocation information.
+3. The retrieved information is displayed in the dashboard.
+4. Users can explore the results, view charts, and access stored database records.
+
+## 📄 CSV File Format
+
+To use the CSV Analysis feature, upload a CSV file containing a column named `ip`.
+
+Example:
+
+| ip |
+|---|
+| 8.8.8.8 |
+| 1.1.1.1 |
+| 208.67.222.222 |
+
+**Note:** The column name must be `ip`.
+
+## 🗄️ Database
+
+The application uses SQLite to store IP lookup records in a local database file named `ip_geolocation.db`.
+
+Database persistence on the hosted application may depend on the hosting environment.
+
+## ⚠️ Important Notes
+
+- An internet connection is required for live API lookups.
+- Geolocation results are estimates and may not represent an exact physical address.
+- API availability and usage limits may apply.
+- Avoid submitting sensitive information through the application.
+
+## 👩‍💻 Author
+
+**Iman Fatima**
+
+## 📜 License
+
+No license has been specified for this project.
+
